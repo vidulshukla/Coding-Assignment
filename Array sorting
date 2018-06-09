@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int arr[20],i,n,j=0,temp[20];
+	clrscr();
+	printf("Enter the number of elements: ");
+	scanf("%d", &n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter element %d ",i+1);
+		scanf("%d",&arr[i]);
+	}
+	printf("Your array ");
+	for(i=0;i<n;i++)
+		{
+			printf("%2d",arr[i]);
+		}
+
+		  for(i=0;i<n;i++)
+		  {
+		  if(arr[i]!=arr[i+1])
+		   {
+		   temp[j++]=arr[i];
+		   }
+		  }
+		  temp[j]=arr[n-1];
+		  printf("\nThe sorted array is ");
+		  for(j=0;j<n-1;j++)
+		  {
+		 printf("%2d",temp[j]);
+		 }
+		getch();
+}
