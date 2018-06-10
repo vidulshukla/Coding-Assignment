@@ -1,2 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+void main()
+{
+  int arr[20],i,n,j=0,temp=[20];
+  clrscr();
