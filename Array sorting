@@ -16,5 +16,18 @@ void main()
       {
         printf("%d",arr[i]);
       }
+      for(i=0;i<n;i++)
+      {
+        if(arr[i]!=arr[i+1])
+        {
+          temp[j++]=arr[i];
+        }
+      }
+      temp[j]=arr[n-1];
+      printf(" \n The sorted array is:");
+      for(j=0;j<n;j++)
+      {
+        printf("%d",temp[j]);
+      }
     getch();
  }
